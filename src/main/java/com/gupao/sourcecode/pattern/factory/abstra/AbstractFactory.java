@@ -2,10 +2,17 @@ package main.java.com.gupao.sourcecode.pattern.factory.abstra;
 
 import main.java.com.gupao.sourcecode.pattern.factory.Milk;
 
-public abstract class AbstractFactory {
+/**
+ * 面包工厂
+ */
+public interface BreadFactory {
 
-    public abstract Milk getYili();
+    protected abstract Milk getMilk();
 
-    public abstract Milk getTeLunSu();
+    public void test(){
+
+    }
+
+
 
 }
