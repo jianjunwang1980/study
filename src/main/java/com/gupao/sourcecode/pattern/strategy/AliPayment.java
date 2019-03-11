@@ -5,5 +5,9 @@ package main.java.com.gupao.sourcecode.pattern.strategy;
  * @Description
  * @Author wangjianjun
  **/
-public class AliPayment {
+public class AliPayment implements Payment {
+    @Override
+    public void pay() {
+        System.out.println("支付宝支付");
+    }
 }

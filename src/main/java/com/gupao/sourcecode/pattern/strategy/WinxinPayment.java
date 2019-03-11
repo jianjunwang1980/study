@@ -5,5 +5,9 @@ package main.java.com.gupao.sourcecode.pattern.strategy;
  * @Description
  * @Author wangjianjun
  **/
-public class JingdongPayment {
+public class WinxinPayment implements Payment {
+    @Override
+    public void pay() {
+        System.out.println("微信支付");
+    }
 }

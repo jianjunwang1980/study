@@ -3,10 +3,8 @@ package main.java.com.gupao.sourcecode.pattern.factory;
 /**
  *
  */
-public class Milk {
+public interface Milk {
 
-    public String getName(){
-        return "牛奶";
-    }
+    String getName();
 
 }

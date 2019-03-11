@@ -5,5 +5,8 @@ package main.java.com.gupao.sourcecode.pattern.factory;
  * @Description
  * @Author wangjianjun
  **/
-public class Bread {
+public interface Bread {
+
+    String getName();
+
 }

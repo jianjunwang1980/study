@@ -5,5 +5,9 @@ package main.java.com.gupao.sourcecode.pattern.strategy;
  * @Description
  * @Author wangjianjun
  **/
-public class CardPayment {
+public class CardPayment implements Payment {
+    @Override
+    public void pay() {
+        System.out.println("银联卡支付");
+    }
 }

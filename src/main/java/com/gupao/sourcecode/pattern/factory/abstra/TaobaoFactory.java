@@ -1,5 +1,7 @@
 package main.java.com.gupao.sourcecode.pattern.factory.abstra;
 
+import main.java.com.gupao.sourcecode.pattern.factory.Bread;
+import main.java.com.gupao.sourcecode.pattern.factory.Huamei;
 import main.java.com.gupao.sourcecode.pattern.factory.Milk;
 import main.java.com.gupao.sourcecode.pattern.factory.TeLunSu;
 
@@ -8,10 +10,15 @@ import main.java.com.gupao.sourcecode.pattern.factory.TeLunSu;
  * @Description
  * @Author wangjianjun
  **/
-public class DaliyuanFactory extends AbstractFactory {
+public class TaobaoFactory extends AbstractFactory {
     @Override
     public Milk getMilk() {
         return new TeLunSu();
+    }
+
+    @Override
+    public Bread getBread() {
+        return new Huamei();
     }
 
 }
